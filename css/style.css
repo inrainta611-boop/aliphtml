@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth; /* aktifkan efek smooth */
+}
+
+body {
+  font-family: Arial, sans-serif, "Inter";
+}
+
+.navbar-brand img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  background-color: #000;
+}
+
+#particles-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  color:white;
+  font-weight: bold;
+}
+.hero-title span {
+  color: #d99a00; /* warna kuning emas */
+}
+.hero-text {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+.material-icons {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+#tentang {
+  background: linear-gradient(to bottom right, #fff 0%, #e5a000 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-quote {
+  border-left: 6px solid #fbbf24; /* kuning */
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* Tombol */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background: #fbbf24;
+  color: white;
+  border: none;
+  width: 50px; /* tombol jadi kotak */
+  height: 50px; /* lalu dibulatkan */
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+  /* Center pakai Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-scroll-top:hover {
+  background: #c6940aff;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-image: url("../img/rhombus\ grid\ \(1.svg"); /* ganti dengan path gambar kamu */
+  background-repeat: no-repeat; /* biar tidak berulang */
+  background-position: right bottom; /* posisikan di kanan bawah */
+  background-size: contain; /* sesuaikan ukuran agar tidak kepotong */
+}
